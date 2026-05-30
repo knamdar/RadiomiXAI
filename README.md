@@ -20,6 +20,10 @@ Radiomics features are often highly intercorrelated due to latent factors such a
 - `code/Dataset.py`: Standard PyTorch `Dataset` pipeline to load, align, and normalize radiomics features.
 - `code/Dataset_nonormalization.py`: PyTorch `Dataset` pipeline similar to `Dataset.py` but without feature normalization, used for raw data input.
 
+## Dataset Setup
+
+The dataset folders under `data/` need to hold the CSV files from the three datasets (**BraTS2020**, **BraTS2023**, and **NSCLC** / NCSLC). They can be downloaded from [openradiomics.org](https://openradiomics.org/).
+
 ## Requirements
 
 To run this project, ensure you have the required GPU-accelerated and machine learning libraries installed (such as RAPIDS cuDF/cuML, PyTorch, LightGBM, networkx, pyvis, and bnlearn). 

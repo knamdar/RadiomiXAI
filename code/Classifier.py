@@ -45,7 +45,7 @@ param_grid = {
     'learning_rate': [0.05, 0.1]
 }
 clf = GridSearchCV(
-    lgb.LGBMClassifier(random_state=42),
+    lgb.LGBMClassifier(random_state=0),
     param_grid,
     scoring='roc_auc',
     cv=3,
